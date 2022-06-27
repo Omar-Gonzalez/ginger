@@ -1,0 +1,26 @@
+{
+  "name": "ginger",
+  "version": "1.0.0",
+  "description": "electron app",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omar-Gonzalez/ginger.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Omar Gonzalez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Omar-Gonzalez/ginger/issues"
+  },
+  "homepage": "https://github.com/Omar-Gonzalez/ginger#readme",
+  "devDependencies": {
+    "electron": "^19.0.6"
+  }
+}
