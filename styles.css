@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+div#board {
+    background-color: #540b0b;
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    padding: 10px;
+}
+
+div#board div.card {
+    background-color: #FFD600;
+    width: calc((600px / 4) - 20px);
+    height: calc((600px / 4) - 20px);
+    margin: 10px;
+    display: inline-block;
+}
+
+div#board div.card img {
+    display: none;
+}
+
+div#board div.card.flipped img {
+    display: block;
+}
+
+div#board div.card img {
+    width: calc((600px / 4) - 20px);
+    height: calc((600px / 4) - 20px);
+}
+
+div#board div.card:hover {
+    cursor: pointer;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+div#board div.card.flipped:hover {
+    cursor: default;
+    animation: none;
+}
