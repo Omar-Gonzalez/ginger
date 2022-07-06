@@ -5,15 +5,17 @@ const path = require("path");
 
 const createWindow = () => {
 	const win = new BrowserWindow({
-		width: 1024,
-		height: 768,
+		width: 635,
+		height: 900,
+		minWidth: 635,
+		minHeight: 900,
 		title: appTitle,
 		webPreferences: {
 			preload: path.join(__dirname, 'preload.js')
 		}
 	})
 	win.loadFile('index.html')
-	win.webContents.openDevTools({mode: "detach"})
+	//win.webContents.openDevTools({mode: "detach"})
 }
 
 app.whenReady().then(() => {

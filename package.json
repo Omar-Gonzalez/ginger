@@ -1,11 +1,13 @@
 {
-  "name": "Meme-mory",
+  "name": "Mememory",
   "version": "1.0.0",
   "description": "electron app",
   "main": "main.js",
   "scripts": {
     "test": "test",
-    "start": "electron ."
+    "start": "electron .",
+    "packager": "npx electron-packager . --overwrite",
+    "winstaller": "node create-windows-installer.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
   },
   "homepage": "https://github.com/Omar-Gonzalez/ginger#readme",
   "devDependencies": {
-    "electron": "^19.0.6"
+    "electron": "^19.0.6",
+    "electron-packager": "^15.5.1",
+    "electron-winstaller": "^5.0.0"
   }
 }

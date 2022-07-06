@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #212121;
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -45,22 +45,36 @@ body {
     }
 }
 
-div#board {
-    background-color: #540b0b;
-    width: 600px;
-    height: 600px;
+div#game{
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 48px;
+    align-content: end;
+    overflow: hidden;
+}
+
+div#game h1{
+    color: whitesmoke;
+    text-align: center;
+}
+
+div#board {
+    width: 600px;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div#board div.card {
     background-color: #FFD600;
+    background-image: url("./memes/carta.jpg");
+    background-position: center;
+    background-size: cover;
     width: calc((600px / 4) - 20px);
     height: calc((600px / 4) - 20px);
     margin: 10px;
     display: inline-block;
+    border-radius: 7px;
 }
 
 div#board div.card img {
